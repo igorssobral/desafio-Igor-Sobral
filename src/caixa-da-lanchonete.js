@@ -11,7 +11,7 @@ class CaixaDaLanchonete {
       "combo2",
     ];
 
-    this.valor = [
+    this.cardapio = [
       ["cafe", 3.0],
       ["chantily", 1.5],
       ["suco", 6.2],
@@ -62,7 +62,7 @@ class CaixaDaLanchonete {
   }
 
   obterPrecoDoProduto(nomeDoProduto) {
-    const item = this.valor.find((item) => item[0] === nomeDoProduto);
+    const item = this.cardapio.find((item) => item[0] === nomeDoProduto);
     return item ? item[1] : null;
   }
 
